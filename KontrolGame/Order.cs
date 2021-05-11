@@ -11,17 +11,19 @@ namespace KontrolGame
         public string  PrivilageOfOrder{get;}
 
         public Customer _customer;
-        public Order (Customer customer, List<Product> prod)
+
+        public int CustomerSale;
+        public Order (Customer customer, List<Product> NewProd)
         {
             _customer = customer;
-            NumberOfProd = prod.Count;
-            PrivilageOfOrder = Customer.GetPrivilage(_customer.Orders.Sum() + NumberOfProd);
+            NumberOfProd = NewProd.Count;
+            PrivilageOfOrder = PrivilageClass.GetPrivilage(_customer.Orders.Sum()+NumberOfProd);
+            
         }
 
 
         public int PercentOfSale()
         {
-           
             if (PrivilageOfOrder == "Great") return 10;
             else if (PrivilageOfOrder == "Boss") return 20;
             else return 0;
