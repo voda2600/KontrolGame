@@ -11,10 +11,10 @@ namespace KontrolGame
         public string  PrivilageOfOrder{get;}
 
         public Customer _customer;
-        public Order (int kol, Customer customer)
+        public Order (Customer customer, List<Product> prod)
         {
             _customer = customer;
-            NumberOfProd = kol;
+            NumberOfProd = prod.Count;
             PrivilageOfOrder = Customer.GetPrivilage(_customer.Orders.Sum() + NumberOfProd);
         }
 
