@@ -1,0 +1,4 @@
+C:\Users\voda2\source\repos\KontrolGame\obj\Debug\netcoreapp3.1\KontrolGame.csprojAssemblyReference.cache
+C:\Users\voda2\source\repos\KontrolGame\obj\Debug\netcoreapp3.1\KontrolGame.AssemblyInfoInputs.cache
+C:\Users\voda2\source\repos\KontrolGame\obj\Debug\netcoreapp3.1\KontrolGame.AssemblyInfo.cs
+C:\Users\voda2\source\repos\KontrolGame\obj\Debug\netcoreapp3.1\KontrolGame.csproj.CoreCompileInputs.cache
